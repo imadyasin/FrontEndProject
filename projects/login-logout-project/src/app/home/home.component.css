@@ -1,0 +1,194 @@
+#section1 .main-slider {
+  padding: 120px 0;
+}
+.main-slider .slider-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.main-slider .banner-content {
+  width: 35%;
+  margin-top: 90px;
+  margin-right: 175px;
+}
+.banner-content h2.banner-title {
+  font-size: 4.5em;
+  font-weight: 500;
+  color: #222;
+}
+.banner-content p {
+  margin: 0 0 60px 0;
+}
+#section1 .slick-dots {
+  left: 200px;
+  bottom: 110px;
+  width: 10%;
+  text-align: inherit;
+}
+#section1 button.slick-arrow {
+  background: transparent;
+  border: 1px solid #E5E3DA;
+  padding: initial;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 270px;
+  z-index: 5;
+  cursor: pointer;
+}
+#section1 button.slick-arrow:hover{
+  border: 1px solid #74642F;
+  background-color: #E5E3DA;
+}
+#section1 button.prev.slick-arrow {
+  left: 110px;
+}
+#section1 button.next.slick-arrow {
+  right: 110px;
+}
+#section1 .slick-arrow i.icon {
+  color: #8C8C8C;
+}
+
+
+
+----------------------------
+
+.slick-dots {
+  bottom: -100px;
+}
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: #D7D5CC;
+  color: #D7D5CC;
+  border-radius: 50%;
+}
+.slick-dots .slick-active {
+  color: #74642F;
+  background: #74642F;
+  border: 1px solid #D7D5CC;
+  outline: 1px solid #D7d5cc;
+}
+
+/*----- Cient-holder Section
+--------------------------------------------------------------*/
+#client-holder {
+  background: #EDEBE4;
+  padding: 105px 0;
+  margin-bottom: 90px;
+}
+#client-holder .logo-wrap {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+#special-offer,
+#popular-items,
+#featured-items {
+    margin-bottom: 90px;
+}
+#featured-items .product-list {
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 30px;
+}
+
+
+.tab-content {
+  position: relative;
+}
+[data-tab-content] {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+.active[data-tab-content] {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 55px 0;
+  justify-content: center;
+  list-style: none;
+}
+.tabs .tab {
+  font-weight: 600;
+  color: #999;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.tabs .tab.active,
+.tabs .tab:hover {
+  color: #111;
+  border-bottom: 2px solid #9A884C;
+}
+img.books-image {
+  /*height: 290px;*/
+  margin-right: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+
+---------------------------------
+
+.product-style figcaption {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.product-style figcaption>h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #74642F;
+  margin: 0;
+}
+
+
+---------------------------------
+
+/*----- Footer Section------------------------------------------*/
+footer#footer {
+    padding-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #E0E0E0;
+}
+#footer .footer-item {
+    margin-right: 100px;
+}
+#footer .footer-item img.footer-logo {
+    margin-bottom: 40px;
+}
+#footer .footer-item p {
+    width: 100%;
+}
+#footer .footer-menu {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+#footer .footer-menu ul {
+    list-style: none;
+}
+#footer .footer-menu ul a {
+    color: var(--dark-text-color);
+    text-decoration: none;
+}
+#footer .footer-menu:last-child {
+    margin-right: 0;
+}
+.footer-menu h5 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+

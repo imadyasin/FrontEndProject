@@ -1,0 +1,118 @@
+<button class="btn btn-primary"  (click)="logout()">Logout</button>
+<div>
+
+</div>
+
+<div class="container m-6 p-5 ">
+  <div class="row gx-5">
+      <div class="p-3 border bg-light">
+        <div class="card">
+          <div class="card-body">
+              <h5 class="card-title text-center pb-3">Add Product</h5>
+              <div class="card-text">
+
+                <div class="mb-3 row">
+                  <label  class="col-sm-3 col-form-label">ProductID</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" name="pid"
+                        [(ngModel)]="pid" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                  <label  class="col-sm-3 col-form-label">Product Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" name="pm"
+                        [(ngModel)]="pm">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                  <label  class="col-sm-3 col-form-label">Category</label>
+                    <div class="col-sm-9">
+                      <select name="ct" [(ngModel)]="ct">
+                        <option *ngFor="let a of category" [value]="a">{{a}}</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                  <label  class="col-sm-3 col-form-label">Quantity</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" name="qt"
+                        [(ngModel)]="qt">
+                    </div>
+                </div>
+
+                                      <div class="mb-3 row">
+                                        <label  class="col-sm-3 col-form-label">Price</label>
+                                        <div class="col-sm-9">
+                                               <input type="qty" class="form-control" name="pr"
+                                               [(ngModel)]="pr">
+                                        </div>
+                                      </div>
+                                      <div class="mb-3 row">
+                                        <div  class="col-sm-3"></div>
+                                        <div class="col-sm-9">
+                                            <button class="btn btn-primary" (click)="addproduct()">Add</button>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                        </div>
+                  </div>
+                 </div>
+
+           </div>
+
+<br>
+<br>
+
+<br>
+
+<h4 class="card-title text-center pb-3 bg-info">My Cart</h4>
+
+<table class="table table-striped table-hover m-10">
+  <thead>
+    <tr>
+      <th scope="col">Select</th>
+      <th scope="col">Product ID</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-template>
+      <tr>
+        {{userlist}}
+      </tr>
+      <tr *ngFor let obj1 of userlist>
+        <td> <form><input type="checkbox"/> </form> </td>
+        <td>
+          {{obj.productid}}
+        </td>
+
+        <td>
+          {{obj.productname}}
+        </td>
+
+        <td>
+          {{obj.category1}}
+        </td>
+
+        <td>
+          {{obj.quantity}}
+        </td>
+
+        <td>
+          {{obj.price}}
+        </td>
+      </tr>
+    </ng-template>
+
+  </tbody>
+</table>
+
